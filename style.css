@@ -10,22 +10,25 @@ header {
 }
 
 nav {
-    margin-right: 35%;
-
+    margin-right: 38%;
 }
 
 nav a {
     float: right;
-    margin-top: 2.2%;
 }
 
-header a {
-    text-decoration: none;
+header nav a {
     font-size: 18px;
-    padding: 1% 2%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
     margin: 2.5% ;
     color: white;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5%;
+    margin-top: 4.5%;
+}
+
+header a:hover{
+    background-color: grey;
     transition-duration: 0.5s;
 }
 
