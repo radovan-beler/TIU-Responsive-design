@@ -1,88 +1,328 @@
 * {
-    margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
-header {
-    background-color: #222629;
-    height: 150px;
+html {
+    scroll-behavior: smooth;
 }
 
-nav {
-    margin-right: 38%;
-}
-
-nav a {
-    float: right;
-}
-
-header nav a {
-    font-size: 18px;
-    padding: 0.5% 0.5% 0.5% 0.5%;
-    margin: 2.5% ;
-    color: white;
-    text-decoration: none;
-    border-radius: 5%;
-    margin-top: 4.5%;
-}
-
-header a:hover{
-    background-color: grey;
-    transition-duration: 0.5s;
-}
-
-header img {
-    float: left;
-    margin-left: 1%;
-    height: 150px;
-}
-
-header i {
-    color: white;
-    float: right;
-    margin-top: 3.3%;
-    margin-right: 2%;
-}
-
-footer {
-    background-color: #222629;
-    margin: auto;
-    width: 100%;
-    height: 150px;
-}
-
-footer a img {
-    padding: 0.5% 0.5% 0.5% 0.5%;
-    margin-left: 2%;
-    margin-top: 5%;
-    height: 25px;
-    border-radius: 10%;
-}
-
-footer a {
+a {
     text-decoration: none;
 }
 
-footer a img:hover{
-    background-color: grey;
-    transition-duration: 0.5s;
+@media only screen and (min-width: 1000px) {
+
+    /*Header*/
+
+    header {
+        margin: auto;
+        background-color: #222629;
+        height: 150px;
+        width: 100%;
+        font-family: Offside, sans-serif;
+    }
+
+    .logo img {
+        height: 150px;
+        margin-left: 30px;
+        position: absolute;
+    }
+
+    nav {
+        margin: 48px 0 0 41%;
+        width: 50%;
+        float: right;
+        padding: 15px 5% 0 0;
+        color: white;
+        position: absolute;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 12px;
+        padding: 10px 20px;
+        margin: 0.5% 1%;
+        color: white;
+        border: 1px solid white;
+        transition-duration: 0.5s;
+        text-transform: uppercase;
+    }
+    
+    nav a:hover {
+        opacity: 0.7;
+    }
+
+    header i {
+        color: white;
+        float: right;
+        margin-top: 60px;
+        margin-left: 1%;
+        position: relative;
+        padding: 10px 20px;
+        color: white;
+        transition-duration: 0.5s;
+    }
+
+    header i:hover {
+        opacity: 0.7;
+    }
+
+    .ikonky {
+        margin-right: 3%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /*Main*/
+
+    main img {
+        width: 100%;
+    }
+
+    /*Footer*/
+
+    footer {
+        background-color: #222629;
+        margin: auto;
+        width: 100%;
+        height: 150px;
+    }
+
+    footer a img {
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        margin-left: 1%;
+        margin-top: 3%;
+        height: 25px;
+        border-radius: 10%;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    footer a img:hover{
+        background-color: grey;
+        transition-duration: 0.5s;
+    }
+    
+    #siete {
+        margin-left: 2%;
+    }
+
+    .copyright {
+        float: right;
+        margin-right: 2%;
+        margin-top: 1%;
+        color: white;
+        font-family: Offside, sans-serif;
+    }
 }
 
-.mena-päta {
-    font-family: Offside, sans-serif;
-    float: right;
-    margin-top: 2%;
-    margin-right: 4%;
-    color: white;
-    font-size: 12px;
-}
+@media only screen and (max-width: 400px) {
+        header {
+            margin: auto;
+            background-color: #222629;
+            height: 100px;
+            width: 100%;
+            font-family: Offside, sans-serif;
+            position: fixed;
+        }
+        
+        .logo img {
+            height: 100px;
+            margin-left: 35%;
+            position: absolute;
+        }
+        
+        nav {
+            display: none;
+        }
+        nav a {
+            display: none;
+        }
+         
+        nav a:hover {
+            opacity: 0.7;
+        }
+        
+        header i {
+            color: white;
+            float: right;
+            margin-top: 9%;
+            margin-left: 8%;
+            position: relative;
+        }
+        
+        .ikonky {
+            margin-right: 5%;
+        }
 
-.copyright {
-    float: right;
-    margin-top: 6%;
-    margin-right: 30%;
-    text-align: right;
-    color: white;
-    font-family: Offside, sans-serif;
+        #menu {
+            float: left;
+            margin-top: 8.5%;
+            margin-left: 8%;
+            position: absolute;
+        }
+
+        #menu {
+            display: inline;
+        }
+        
+        /*Main*/
+
+
+
+        main img {
+            width: 100%;
+            height: 1500px;
+        }
+
+        /*Footer*/
+        
+        footer {
+            background-color: #222629;
+            margin: auto;
+            width: 100%;
+            height: 100px;
+        }
+        
+        footer a img {
+            padding: 0.5% 0.5% 0.5% 0.5%;
+            margin-left: 10%;
+            margin-top: 5%;
+            height: 25px;
+            border-radius: 10%;
+        }
+        
+        footer a {
+            text-decoration: none;
+        }
+        
+        footer a img:hover{
+            background-color: grey;
+            transition-duration: 0.5s;
+        }
+
+        #siete {
+            margin-left: 22%;
+        }
+        
+        .copyright {
+            font-size: 14px;
+            margin-top: 6%;
+            margin-left: 16%;
+            color: white;
+            font-family: Offside, sans-serif;
+        }
+  }
+
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+
+    /*Header*/
+
+    header {
+        margin: auto;
+        background-color: #222629;
+        height: 120px;
+        width: 100%;
+        font-family: Offside, sans-serif;
+    }
+
+    .logo img {
+        height: 120px;
+        margin-left: 30px;
+        position: absolute;
+    }
+
+    nav {
+        margin: 48px 0 0 41%;
+        width: 50%;
+        float: right;
+        padding: 15px 5% 0 0;
+        color: white;
+        position: absolute;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 12px;
+        padding: 10px 20px;
+        margin: 0.5% 1%;
+        color: white;
+        border: 1px solid white;
+        transition-duration: 0.5s;
+        text-transform: uppercase;
+    }
+    
+    nav a:hover {
+        opacity: 0.7;
+    }
+
+    header i {
+        color: white;
+        float: right;
+        margin-top: 60px;
+        margin-left: 1%;
+        position: relative;
+        padding: 10px 20px;
+        color: white;
+        transition-duration: 0.5s;
+    }
+
+    header i:hover {
+        opacity: 0.7;
+    }
+
+    .ikonky {
+        margin-right: 3%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /*Main*/
+
+    main img {
+        width: 100%;
+    }
+
+    /*Footer*/
+
+    footer {
+        background-color: #222629;
+        margin: auto;
+        width: 100%;
+        height: 150px;
+    }
+
+    footer a img {
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        margin-left: 1%;
+        margin-top: 3%;
+        height: 25px;
+        border-radius: 10%;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    footer a img:hover{
+        background-color: grey;
+        transition-duration: 0.5s;
+    }
+    
+    #siete {
+        margin-left: 2%;
+    }
+
+    .copyright {
+        float: right;
+        margin-right: 2%;
+        margin-top: 1%;
+        color: white;
+        font-family: Offside, sans-serif;
+    }
 }
