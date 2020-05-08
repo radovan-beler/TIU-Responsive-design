@@ -1,0 +1,1405 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(img/pozadie.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+}
+
+.wrapper {
+    background-color: rgba(255,255,255,0.85);
+    margin: 0 auto;
+    min-height: 1020px;
+    position: relative;
+}
+
+.wrappermain {
+    width: 80%;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    /*Header*/
+
+    header {
+        margin: auto;
+        background-color: #222629;
+        height: 150px;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 150px;
+        margin-left: 30px;
+        position: absolute;
+    }
+
+    nav {
+        margin: 48px 0 0 41%;
+        width: 50%;
+        float: right;
+        padding: 15px 5% 0 0;
+        color: white;
+        position: absolute;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 12px;
+        padding: 10px 20px;
+        margin: 0.5% 1%;
+        color: white;
+        border: 1px solid white;
+        transition-duration: 0.5s;
+        text-transform: uppercase;
+    }
+    
+    nav a:hover {
+        opacity: 0.7;
+    }
+
+    header i {
+        color: white;
+        float: right;
+        margin-top: 45px;
+        margin-left: 1%;
+        position: relative;
+        padding: 10px 20px;
+        color: white;
+        transition-duration: 0.5s;
+    }
+
+    header i:hover {
+        opacity: 0.7;
+    }
+
+    .ikonky {
+        margin-right: 3%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /*Main*/
+
+    /*Hlavnáˇ stránka*/
+    
+    .uvod body {
+        background-image: url(img/pozadie.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;  
+    }
+
+
+    main.uvod h1 {
+        color: #222629;
+        font-size: 22px;
+        padding-top: 80px;
+        margin-left: 50%;
+    }
+    
+    main.uvod h2 {
+        color: #222629;
+        font-size: 22px;
+        padding-top: 90px;
+        margin-left: 50%;
+    }
+    
+    main.uvod .clanok-uvod {
+        margin-top: 65px;
+        margin-left: 350px;
+        text-align: center;
+    }
+    
+    
+    .topanky img {
+        width: 400px;
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .viac a {
+        color: white;
+    }
+    
+    .viac {
+        background-color: #222629; 
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 105px;
+        margin-left: 57%;
+        margin-bottom: 15%;
+    }
+    
+    .viac:hover {
+        opacity: 0.7;
+        transition-duration: 0.5s;
+    
+    }
+
+    /*O nás*/
+
+    .onas main {
+        height: 100%;
+    }
+
+    .onas img {
+        float: left;
+        margin-left: 5%;
+        margin-top: 8%;
+        padding: 0 5% 0 5%;
+    }
+
+    .onas h1 {
+        padding-top: 8%;
+        margin-left: 40%;
+    }
+
+    .onas p {
+        text-align: justify;
+        line-height: 32px;
+        font-size: 18px;
+        margin-top: 8%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    /*Obchod*/
+
+    .obchod h1 {
+        font-size: 24px;
+        margin: 5% 0 5% 0;
+        text-align: center;
+    }
+
+    .kartaproduktu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding-bottom: 10%;
+    }
+
+    .kartaproduktu a img {
+        width: 100%;
+        margin-top: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .kartaproduktu a h1 {
+        font-size: 14px;
+        color: grey;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .kartaproduktu a h2 {
+        font-size: 16px;
+        text-align: center;
+        margin: 15% 10% 0 10%;
+        color: #222629;
+    }
+
+    .kartaproduktu a p {
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20%;
+        color: #222629;
+        margin-bottom: 20%;
+    }
+        
+    .kartaproduktu a {
+        justify-self: center;
+        place-self: center;
+    }
+
+    .yeezy {
+        grid-area: 1 / 1 / 2 / 2; 
+        border: 1px solid black;
+    }
+    .airjordan { 
+        grid-area: 1 / 2 / 2 / 3; 
+        border: 1px solid black;
+    }
+    .presto { 
+        grid-area: 1 / 3 / 2 / 4;
+        border: 1px solid black; 
+    }
+    .humanrace { 
+        grid-area: 1 / 4 / 2 / 5; 
+        border: 1px solid black;
+    }
+
+    /* Kontakt */
+
+        .mapa {
+        width: 100%;
+        height: 600px;
+    }
+    
+    .kontakt {
+        padding-bottom: 2%;
+    }
+    
+    .udaje h1 {
+        float: left;
+        margin-left: 15%;
+        font-size: 24px;
+    }
+    
+    .udaje h2 {
+        float: left;
+        margin-left: 15%;
+        font-size: 24px;
+    }
+    
+    .udaje p {
+        text-align: right;
+        margin-top: 5px;
+    }
+    
+    .udaje {
+        margin-right: 28%;
+    }
+    
+    .meno {
+        margin-top: 15%;
+        margin-bottom: 15%;
+        text-align: center;
+    }
+    
+    .meno p {
+        margin-top: 20px;
+    }
+    
+    .obrazok {
+        float: left;
+        margin-left: 10%;
+        width: 220px;
+        border-radius: 50%; 
+    }
+    
+    .meno hr {
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    
+    iframe {
+        border-width: 0px;
+        margin-bottom: 10%;
+    }
+    
+    .kosik {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 7em);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0;
+    }
+
+    .productInBasket{
+        border-bottom: 0.5px solid grey;
+    }
+
+    .nazov{
+        float: left;
+        margin-left: 0.5em;
+        position: relative;
+        top: 40%;
+    }
+
+    .cena {
+        float: right;
+        margin-right: 0.5em;
+        position: relative;
+        top: 40%;
+    }
+
+    .productInBasket img{
+        height: 6em;
+        width: 6em;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        float: left;
+        border-radius: 5%;
+    }
+
+    .stranka_produktu {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 100%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .stranka_produktu img {
+        width: 80%;
+        margin-left: 4.5em;
+        margin-top: 4.5em;
+        padding-right: 5em;
+        float: left;
+    }
+
+    .stranka_produktu figure {
+    }
+
+    .stranka_produktu article {
+        margin-top: 4.5em;
+        margin-left: 2em;
+
+    }
+
+    .stranka_produktu h3 {
+        margin-bottom: 0.5em;
+    }
+
+    .stranka_produktu h4 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+
+    .productinfo  {
+        margin-right: 5em;
+        margin-top: 1em;
+    }
+
+    .stranka_produktu a {
+        font-size: 1.5em;
+        display: block;
+
+    }
+
+    .buybutton {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        width: 13.7em;
+        background-color: #61892F;
+        color: white;
+        padding: 1em 3em 1em 3em;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+
+
+    .dropbtn {
+        background-color: #61892F;
+        color: white;
+        padding: 1em 3em 1em 3em;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 13.7em;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+  
+    /*Footer*/
+
+    footer {
+        background-color: #222629;
+        margin: auto;
+        width: 100%;
+        height: 150px;
+
+    }
+
+    footer a img {
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        margin-left: 1%;
+        margin-top: 3%;
+        height: 25px;
+        border-radius: 10%;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    footer a img:hover{
+        background-color: grey;
+        transition-duration: 0.5s;
+    }
+    
+    #siete {
+        margin-left: 2%;
+    }
+
+    .copyright {
+        float: right;
+        margin-right: 2%;
+        margin-top: 1%;
+        color: white;
+        font-family: Offside, sans-serif;
+    }
+}
+
+@media only screen and (max-width: 652px) {
+        header {
+            display: grid;
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-rows: 100px;
+            background-color: #222629;
+        }
+        
+        .logo img {
+            grid-area: 1 / 2 / 2 / 3;
+            height: 100px;
+        }
+        
+        nav {
+            display: none;
+        }
+        nav a {
+            display: none;
+        }
+         
+        nav a:hover {
+            opacity: 0.7;
+        }
+        
+        header i {
+            color: white;
+            place-self: center;
+        }
+
+        #kosik {
+            grid-area: 1 / 3 / 2 / 4;
+            place-self: center;
+        }
+
+        #menu {
+            grid-area: 1 / 1 / 2 / 2;
+            place-self: center;
+        }
+
+        header a {
+            display: grid;
+        }
+
+        #menu {
+            display: inline;
+        }
+        
+        /*Main*/
+
+    /*Hlavnáˇ stránka*/
+    
+    
+    main.uvod h1 {
+        color: #222629;
+        font-size: 22px;
+        margin-top: 80px;
+        margin-left: 12%;
+        margin-right: 12%;
+        text-align: center;
+    }
+    
+    main.uvod h2 {
+        color: #222629;
+        font-size: 22px;
+        margin-top: 80px;
+        margin-left: 12%;
+        margin-right: 12%;
+        text-align: center;
+    }
+    
+    main.uvod .clanok-uvod {
+        margin-top: 65px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+    }
+    
+    
+    .topanky img {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    
+    .viac a {
+        color: white;
+    }
+    
+    .viac {
+        background-color: #222629; 
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 105px;
+        margin-left: 40%;
+        margin-bottom: 15%;
+    }
+    
+    .viac:hover {
+        opacity: 0.7;
+        transition-duration: 0.5s;
+    
+    }
+
+    /*O nás*/
+
+    .onas main {
+        height: 100%;
+    }
+
+    .onas img {
+        display: block;
+        margin: 5% auto 5% auto;
+        width: 80%
+    }
+
+    .onas h1 {
+        text-align: center;
+    }
+
+    .onas p {
+        text-align: justify;
+        line-height: 32px;
+        font-size: 18px;
+        margin-top: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
+        padding-bottom: 6.3%;
+    }
+
+    /*Obchod*/
+
+    .obchod h1 {
+        font-size: 24px;
+        margin: 5% 0 5% 0;
+        text-align: center;
+    }
+
+    .kartaproduktu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding-bottom: 10%;
+    }
+
+    .kartaproduktu a {
+        justify-self: center;
+        place-self: center;
+    }
+
+    .kartaproduktu a img {
+        width: 100%;
+        margin-top: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .kartaproduktu a h1 {
+        font-size: 14px;
+        color: grey;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .kartaproduktu a h2 {
+        font-size: 16px;
+        text-align: center;
+        margin: 15% 10% 0 10%;
+        color: #222629;
+    }
+
+    .kartaproduktu a p {
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20%;
+        color: #222629;
+        margin-bottom: 20%;
+    }
+        
+    .yeezy {
+        grid-area: 1 / 1 / 2 / 2; 
+        border: 1px solid black;
+    }
+    .airjordan { 
+        grid-area: 2 / 1 / 3 / 2; 
+        border: 1px solid black;
+    }
+    .presto { 
+        grid-area: 3 / 1 / 4 / 2;
+        border: 1px solid black; 
+    }
+    .humanrace { 
+        grid-area: 3 / 1 / 4 / 2; 
+        border: 1px solid black;
+    }
+
+    /* Kontakt */
+
+    .mapa {
+        width: 100%;
+        height: 600px;
+      }
+      
+      .kontakt {
+        padding-bottom: 2%;
+      }
+      
+      .udaje h1 {
+        float: left;
+        margin-left: 50px;
+        font-size: 18px;
+      }
+      
+      .udaje h2 {
+        float: left;
+        margin-left: 50px;
+        font-size: 18px;
+      }
+      
+      .udaje p {
+        text-align: right;
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      
+      .meno u {
+          font-size: 24px;
+      }
+
+      .udaje {
+        margin-right: 10%;
+      }
+      
+      .meno {
+        margin-top: 15%;
+        margin-bottom: 10%;
+        text-align: center;
+      }
+      
+      .meno p {
+        margin-top: 20px;
+      }
+      
+      .obrazok {
+        float: left;
+        border-radius: 50%; 
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 5%;
+      }
+      
+      .meno hr {
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      
+      
+      iframe {
+        border-width: 0px;
+        margin-bottom: 10%;
+      }
+
+      .kosik {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 5em);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0;
+    }
+
+    .productInBasket{
+        border-bottom: 0.5px solid grey;
+    }
+
+    .nazov{
+        float: right;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    .cena {
+        float: right;
+        margin-right: 0.5em;
+        margin-top: 1em;
+    }
+
+    .productInBasket img{
+        height: 4em;
+        width: 4em;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        float: left;
+        border-radius: 5%;
+    }
+
+    .stranka_produktu img {
+        width: 90%;
+        height: 90%;
+        margin-left: 1em;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        float: left;
+    }
+
+    .stranka_produktu article {
+        margin-top: 4.5em;
+        margin-left: 1em;
+
+    }
+
+    .stranka_produktu h3 {
+        margin-bottom: 0.5em;
+    }
+
+    .stranka_produktu h4 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+
+    .productinfo  {
+        margin-right: em;
+        margin-top: 1em;
+        text-align: justify;
+    }
+
+    .stranka_produktu a {
+        font-size: 1.5em;
+        display: block;
+
+    }
+
+    .buybutton {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        width: 13.7em;
+        background-color: #61892F;
+        color: white;
+        padding: 1em 3em 1em 3em;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+
+
+    .dropbtn {
+        background-color: #61892F;
+        color: white;
+        padding: 1em 3em 1em 3em;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 13.7em;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+
+      /*product*/
+    .stranka_produktu img {
+        width: 92%;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        float: left;
+    }
+
+    .stranka_produktu article {
+        margin-top: 4.5em;
+        margin-left: 1em;
+
+    }
+
+    .stranka_produktu h3 {
+        margin-bottom: 0.5em;
+    }
+
+    .stranka_produktu h4 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+
+    .productinfo  {
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+
+    .stranka_produktu a {
+        font-size: 1.5em;
+        display: block;
+
+    }
+
+    .buybutton {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        width: 13.7em;
+        background-color: #61892F;
+        color: white;
+        padding: 1em 3em 1em 3em;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+
+
+    .dropbtn {
+        background-color: #61892F;
+        color: white;
+        padding: 1em 3em 1em 3em;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 13.7em;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+
+        /*Footer*/
+        
+        footer {
+            background-color: #222629;
+            margin: auto;
+            width: 100%;
+            height: 100px;
+        }
+        
+        footer a img {
+            padding: 0.5% 0.5% 0.5% 0.5%;
+            margin-left: 10%;
+            margin-top: 5%;
+            height: 25px;
+            border-radius: 10%;
+        }
+        
+        footer a {
+            text-decoration: none;
+        }
+        
+        footer a img:hover{
+            background-color: grey;
+            transition-duration: 0.5s;
+        }
+
+        #siete {
+            margin-left: 22%;
+        }
+        
+        .copyright {
+            font-size: 14px;
+            margin-top: 6%;
+            margin-left: 16%;
+            color: white;
+            font-family: Offside, sans-serif;
+        }
+  }
+
+@media only screen and (min-width: 652px) and (max-width: 1000px) {
+
+    /*Header*/
+
+    header {
+        margin: auto;
+        background-color: #222629;
+        height: 120px;
+        width: 100%;
+        font-family: Offside, sans-serif;
+    }
+
+    .logo img {
+        height: 120px;
+        margin-left: 30px;
+        position: absolute;
+    }
+
+    nav {
+        margin: 35px 0 0 30%;
+        width: 50%;
+        float: right;
+        padding: 15px 5% 0 0;
+        color: white;
+        position: absolute;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 12px;
+        padding: 10px 20px;
+        margin: 0.5% 1%;
+        color: white;
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
+    
+
+    header i {
+        color: white;
+        float: right;
+        margin-top: 45px;
+        margin-right: 3%;
+    }
+
+    .ikonky {
+        margin-right: 3%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /*Main*/
+
+    /*Hlavnáˇ stránka*/
+    
+    
+    main.uvod h1 {
+        color: #222629;
+        font-size: 22px;
+        margin-top: 80px;
+        margin-left: 12%;
+        margin-right: 12%;
+        text-align: center;
+    }
+    
+    main.uvod h2 {
+        color: #222629;
+        font-size: 22px;
+        margin-top: 80px;
+        margin-left: 12%;
+        margin-right: 12%;
+        text-align: center;
+    }
+    
+    main.uvod .clanok-uvod {
+        margin-top: 65px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+    }
+    
+    
+    .topanky img {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    
+    .viac a {
+        color: white;
+    }
+    
+    .viac {
+        background-color: #222629; 
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 105px;
+        margin-left: 45%;
+        margin-bottom: 15%;
+    }
+    
+    .viac:hover {
+        opacity: 0.7;
+        transition-duration: 0.5s;
+    }
+
+    /*O nás*/
+
+    .onas main {
+        height: 100%;
+    }
+
+    .onas img {
+        display: block;
+        margin: 5% auto 5% auto;
+        width: 400px;
+    }
+
+    .onas h1 {
+        text-align: center;
+    }
+
+    .onas p {
+        text-align: justify;
+        line-height: 32px;
+        font-size: 18px;
+        margin-top: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
+        padding-bottom: 6.3%;
+    }
+
+    /*Obchod*/
+
+    .obchod h1 {
+        font-size: 24px;
+        margin: 5% 0 5% 0;
+        text-align: center;
+    }
+
+    .kartaproduktu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding-bottom: 10%;
+    }
+
+    .kartaproduktu a {
+        justify-self: center;
+        place-self: center;
+    }
+
+    .kartaproduktu a img {
+        width: 100%;
+        margin-top: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .kartaproduktu a h1 {
+        font-size: 14px;
+        color: grey;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .kartaproduktu a h2 {
+        font-size: 16px;
+        text-align: center;
+        margin: 15% 10% 0 10%;
+        color: #222629;
+    }
+
+    .kartaproduktu a p {
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20%;
+        color: #222629;
+        margin-bottom: 20%;
+    }
+        
+    .yeezy {
+        grid-area: 1 / 1 / 2 / 2; 
+        border: 1px solid black;
+    }
+    .airjordan { 
+        grid-area: 1 / 2 / 2 / 3;
+        border: 1px solid black;
+    }
+    .presto { 
+        grid-area: 2 / 1 / 3 / 2;
+        border: 1px solid black; 
+    }
+    .humanrace { 
+        grid-area: 2 / 2 / 3 / 3;
+        border: 1px solid black;
+    }
+
+    /* Kontakt */
+
+    .mapa {
+        width: 100%;
+        height: 600px;
+      }
+      
+      .kontakt {
+        padding-bottom: 2%;
+      }
+      
+      .udaje h1 {
+        float: left;
+        margin-left: 50px;
+        font-size: 18px;
+      }
+      
+      .udaje h2 {
+        float: left;
+        margin-left: 50px;
+        font-size: 18px;
+      }
+      
+      .udaje p {
+        text-align: right;
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      
+      .meno u {
+          font-size: 24px;
+      }
+
+      .udaje {
+        margin-right: 10%;
+      }
+      
+      .meno {
+        margin-top: 15%;
+        margin-bottom: 15%;
+        text-align: center;
+      }
+      
+      .meno p {
+        margin-top: 20px;
+      }
+      
+      .obrazok {
+        float: left;
+        border-radius: 50%; 
+        width: 25%;
+        margin-left: 50px;
+        margin-bottom: 5%;
+      }
+      
+      .meno hr {
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      
+      
+      iframe {
+        border-width: 0px;
+        margin-bottom: 10%;
+      }
+
+      .kosik {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 5.5em);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0;
+    }
+
+    .productInBasket{
+        border-bottom: 0.5px solid grey;
+    }
+
+    .nazov{
+        float: left;
+        margin-left: 0.5em;
+        position: relative;
+        top: 40%;
+    }
+
+    .cena {
+        float: right;
+        margin-right: 0.5em;
+        position: relative;
+        top: 40%;
+    }
+
+    .productInBasket img{
+        height: 4.5em;
+        width: 4.5em;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        float: left;
+        border-radius: 5%;
+    }
+
+
+    /*Footer*/
+
+    footer {
+        background-color: #222629;
+        margin: auto;
+        width: 100%;
+        height: 120px;
+    }
+
+    footer a img {
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        margin-left: 1%;
+        margin-top: 3%;
+        height: 25px;
+        border-radius: 10%;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    footer a img:hover{
+        background-color: grey;
+        transition-duration: 0.5s;
+    }
+    
+    #siete {
+        margin-left: 2%;
+    }
+
+    .copyright {
+        float: right;
+        margin-right: 2%;
+        margin-top: 1%;
+        color: white;
+        font-family: Offside, sans-serif;
+    }
+}
+
+@media print {
+    * {
+        margin: 0;
+        padding: 0;
+        position: unset;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    main img {
+        display: none;
+    }
+
+    .nekalosti{
+        display: none;
+    }
+
+    .nazov {
+        float: left;
+
+    }
+
+    .cena {
+        float: right;
+    }
+
+}
